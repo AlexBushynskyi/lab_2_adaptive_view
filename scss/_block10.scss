@@ -1,0 +1,27 @@
+.block_ten_background {
+	@include flexbox(flex, column, flex-start, center);
+	/*background: url(../img/background_block_nine.png) center no-repeat;*/
+	max-width: 1920px;
+	width: 100%;
+	.block_ten {
+		@include flexbox(flex, row, space-between, flex-start);
+		flex-wrap: wrap;
+		color: $c_black;
+		.map, .telef, .time {
+			color: black;
+			text-align: center;
+			@include flexbox(flex, row,  flex-start, center);
+			margin: 30px 0;
+			font-weight: bold;
+			img {
+				margin-right: 10px;
+			}
+			a {
+				color: black;
+			}
+			a:hover {
+				color: $c_red;
+			}
+		}
+	}
+}

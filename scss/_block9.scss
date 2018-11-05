@@ -1,0 +1,34 @@
+.block_nine_background {
+	@include flexbox(flex, column, flex-start, center);
+	background: url(../img/background_block_nine.png) center no-repeat;
+	max-width: 1920px;
+	background-size: auto 100%;
+	width: 100%;
+	height: 100%;
+	.block_nine {
+		color: $c_black;
+		#block_nine_text {
+			@include flexbox(flex, column, flex-start, center);
+			#zamery {
+				text-align: center;
+				color: black;
+				max-width: 790px;
+				margin: 20px 0;
+			}
+			#zapis {
+				text-align: center;
+				color: $c_red;
+				margin: 20px 0;
+			}
+			.numbers, a {
+				text-align: center;
+				font-weight: bold;
+				color: black;
+				margin-top: 20px;
+			}
+			a:hover {
+				color: $c_red;
+			}
+		}
+	}
+}

@@ -1,0 +1,37 @@
+.slider_1 {
+	margin-bottom: 50px;
+	max-width: 1920px;
+	width: 100%;
+	.slider_1_item_1 {
+		max-width: 1920px;
+		width: 100%;
+		@include flexbox(flex, column, space-around, center);
+		.text_f_b {
+			@include flexbox(flex, column, flex-end, center);
+			z-index: 1;
+			position: relative;
+			.text1 {
+				font-weight: bolder;
+				color: $c_white;
+			}
+			.text2 {
+				color: $c_white;
+			}
+
+			.text3 {
+				color: $c_red_light;
+			}
+			.but_more {
+				color: $c_white;
+				border-radius: 5px;
+				background-color: $c_red;
+				margin: 0 auto;
+				text-align: center;
+			}
+			.but_more:hover {
+				color: $c_grey;
+				background-color: $c_white;
+			}
+		}
+	}
+}

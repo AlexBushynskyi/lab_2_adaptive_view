@@ -1,0 +1,129 @@
+.header_full {
+	max-width: 1920px;
+	max-height: 190px;
+	width: 100%;
+	background-color: $c_grey;
+	position: absolute;
+	opacity: 0.9;
+	@include flexbox(flex, column, flex-start, center);
+ 	z-index: 100;
+ 	.header_logo {
+		@include flexbox(flex, row, space-between, center);
+	 	max-width: 1200px;
+	 	width: 100%;
+	 	height: 140px;
+		.adress_tel, .email_site_open {
+			font-size: 14px;
+			height: 100px;
+			@include flexbox(flex, column, space-around, baseline);
+		}
+	}
+	nav {
+	 	max-width: 1200px;
+	 	width: 100%;
+	 	height: 50px;
+	 	ul {
+	 		@include flexbox(flex, row, space-between, center);
+	 		margin-top: 9px;
+	 		li {
+	 			list-style-type: none;
+			 	div {
+			 		color: $c_white;
+			 		height: 25px;
+			 		line-height: 25px;
+
+			 	}
+			 	div:hover {
+			 		color: $c_red_light;
+			 	}
+				.call_back {
+					background-color: $c_grey_light;
+					border: none;
+					border-radius: 5px;
+					padding: 5px 20px;
+				}
+			 	.call_back:hover {
+			 		background-color: $c_red;
+			 		color: $c_white;
+			 	}
+			}
+		}
+	}
+}
+
+
+.header_320_480 {
+	max-width: 1920px;
+	height: 60px;
+	width: 100%;
+	background-color: $c_grey;
+	position: fixed;
+	opacity: 0.9;
+ 	z-index: 100;
+ 	nav {
+ 		@include flexbox(flex, row, space-between, center);
+ 		a {
+ 			img {
+ 				margin-left: 10px;
+ 				margin-top: 10px;
+ 				height: 30px;
+ 			}
+ 		}
+ 		#menu_click {
+ 			height: 50px;
+ 			img {
+ 				height: 40px;
+ 				margin-right: 10px;
+ 				margin-top: 10px;
+ 			}
+ 		}
+ 		div:hover {
+ 			.float_menu {
+				display: block;
+ 			}
+ 		}
+ 	}
+}
+
+.float_menu {
+	font-family: $custom_font;
+	position: fixed;
+	top: 62px;
+	right: 0;
+	background-color: $c_grey;
+	opacity: 0.9;
+	z-index: 100;
+	width: 240px;
+ 	ul {
+ 		@include flexbox(flex, column, center, center);
+ 		margin-top: 9px;
+ 		margin-right: 40px;
+ 		li {
+ 			list-style-type: none;
+		 	div {
+		 		color: $c_white;
+		 		height: 30px;
+		 		width: 200px;
+		 		line-height: 30px;
+		 		text-align: center;
+		 		border-bottom: 1px solid $c_grey_light;
+		 		margin-bottom: 2px;
+		 	}
+		 	div:hover {
+		 		color: $c_red_light;
+		 	}
+			.call_back {
+				background-color: $c_grey_light;
+				border: none;
+				border-radius: 5px;
+				padding: 5px 20px;
+				height: 30px;
+				width: 160px;
+			}
+		 	.call_back:hover {
+		 		background-color: $c_red;
+		 		color: $c_white;
+		 	}
+		}
+	}
+}
